@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>blogs-test</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- built files will be auto injected -->
+<script src="https://cdnjs.buttercms.com/buttercms-1.1.0.min.js"></script>
+<script>
+var butter= Butter('a2cf18f6fb69d66ba661e6486be6ef6c4ae9a7bc');
+butter.post.list({page: 1, page_size: 10}).then(function(response) {
+  console.log(response)
+})
+</script>
+  </body>
+</html>
